@@ -3,7 +3,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
 
-// get all product
+// get all products
 router.get('/', async (req, res) => {
   // find all products
   try {
@@ -23,7 +23,10 @@ router.get('/:id', async (req, res) => {
     const productData = await Product.findAll({
       include: [{ model: Category }, { model: Tag }]
     })
-
+    if (!productData) {
+      res.status(404).json({ message:'No product found with this id!'});
+      return;
+    }
     res.status(200).json(productData)
   } catch (err) {
     res.status(500).json(err)
@@ -69,7 +72,6 @@ router.put('/:id', (req, res) => {
     .then((productTags) => {
       // get list of current tag_ids
       const productTagIds = productTags.map(({ tag_id }) => tag_id);
-      // create filtered list of new tag_ids
       const newProductTags = req.body.tagIds
         .filter((tag_id) => !productTagIds.includes(tag_id))
         .map((tag_id) => {
@@ -109,7 +111,6 @@ router.delete('/:id', async (req, res) => {
       res.status(404).json({ message: 'No product found with this id!' });
       return;
     }
-
     res.status(200).json(productData);
   } catch (err) {
     res.status(500).json(err);
