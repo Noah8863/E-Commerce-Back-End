@@ -38,7 +38,22 @@
 
   ## How to use this project 
 
-  Open a intergrated terminal in the project and type "node server.js" in order to start up the server. Once running, use a developer tool like insomnia to test all the routes. Since this project doesn't have a front-end this is the only way to use the program.  
+  Open a intergrated terminal in the project and type "node server.js" in order to start up the server. Once running, use a developer tool like insomnia to test all the routes. Since this project doesn't have a front-end this is the only way to use the program. 
+  
+  GET Routes for Tags, Categories and Products:
+  
+  [GET Routes for Back End.webm](https://user-images.githubusercontent.com/60634270/178601017-2c3ae071-43ae-4ef5-b32b-d6898e296164.webm)
+
+  GET Routes with ID for Tags, Categories and Products: 
+  
+  [GET Route with ID.webm](https://user-images.githubusercontent.com/60634270/178601516-17031b58-2b6f-42a0-a3f3-42b4ba22ea63.webm)
+
+
+  Post, Put and Delete Routes for Categories: 
+  
+  [Category Routes.webm](https://user-images.githubusercontent.com/60634270/178608707-0ae5a507-11f5-490a-80ff-82da1ffa0858.webm)
+
+
 
   ## Contributing to this project
   Fork the repo and submit a merge request. Merging will be approved upon review.  
