@@ -74,8 +74,8 @@
 
   If you have any questions, please contact me at: 
  
-  Github Profile: [Noah8863](https://github.com/Noah8863)  
+  Github Profile: [noah8863](https://github.com/noah8863)  
 
   Email: stacknoah99@gmail.com 
 
-  LinkedIn: Noah Hoffman
+  LinkedIn: [Noah Hoffman](https://www.linkedin.com/in/noah-hoffman-9975a7121/)
